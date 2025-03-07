@@ -4,5 +4,7 @@
     <color name="white">#FAFAFA</color>        <!-- Soft White -->
     <color name="blue">#1976D2</color>         <!-- Rich Royal Blue -->
     <color name="green">#2E7D32</color>        <!-- Elegant Dark Green -->
-    <color name="teal_700">#00796B</color>     <!-- Deep Teal -->
+    <color name="teal_700">#00796B</color>
+    <color name="light_gray">#E0E0E0</color><!-- Deep Teal -->
+    <color name="purple">#7B1FA2</color>
 </resources>

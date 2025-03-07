@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="6dp"
+        android:background="@android:color/white"
+        android:padding="12dp">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+        <!-- Payment Icon -->
+        <ImageView
+                android:id="@+id/transactionIcon"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_payment"
+                android:layout_marginEnd="12dp"
+                app:tint="@color/purple" />
+
+        <!-- Transaction Details -->
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+            <!-- Transaction Title (Payment ID or Description) -->
+            <TextView
+                    android:id="@+id/tvTransactionTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Payment ID: XYZ123"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:textColor="#333333"/>
+
+            <!-- Transaction Date -->
+            <TextView
+                    android:id="@+id/tvTransactionDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="12 Jan 2024, 3:45 PM"
+                    android:textSize="12sp"
+                    android:textColor="@android:color/darker_gray"/>
+
+            <!-- Transaction Status -->
+            <TextView
+                    android:id="@+id/tvTransactionStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Completed"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:paddingTop="4dp"
+                    android:textColor="@android:color/holo_green_dark"/>
+        </LinearLayout>
+
+        <!-- Transaction Amount -->
+        <TextView
+                android:id="@+id/tvTransactionAmount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="₹250.00"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@android:color/holo_green_dark"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/main"
@@ -9,7 +8,6 @@
         android:background="@drawable/gradient_bg"
         tools:context=".ui.HomeActivity">
 
-    <!-- CardView for a more elegant look -->
     <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="200dp"
@@ -29,10 +27,9 @@
                 android:textColor="#333"
                 android:layout_gravity="center"
                 android:fontFamily="sans-serif-medium"
-                android:padding="16dp"/>
+                android:padding="16dp" />
     </androidx.cardview.widget.CardView>
 
-    <!-- Stylish Button -->
     <com.google.android.material.button.MaterialButton
             android:id="@+id/btnProceed"
             android:layout_width="wrap_content"
@@ -43,11 +40,27 @@
             android:backgroundTint="@color/teal_700"
             android:layout_marginTop="20dp"
             android:padding="12dp"
+            android:layout_marginBottom="20dp"
+            app:cornerRadius="30dp"
+            app:icon="@drawable/ic_payment"
+            app:layout_constraintBottom_toTopOf="@id/btnHistory"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Transaction History"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/black"
             android:layout_marginBottom="60dp"
+            android:padding="12dp"
             app:cornerRadius="30dp"
             app:icon="@drawable/ic_payment"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"/>
+            app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
